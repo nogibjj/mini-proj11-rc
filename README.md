@@ -1,33 +1,53 @@
-# IDS706-Week11-Mini-Project: PySpark Data Processing
+# IDS706-Week11-Mini-Project
 
-This repository contains a PySpark script designed to perform sophisticated data processing on a large dataset, specifically focusing on game statistics. It demonstrates the use of Spark SQL for data querying and DataFrame API for transformations. 
 
-## Project Overview
+This week's mini-project involves using Azure Databricks to build a data pipeline using the lab's song dataset. I connected my Azure account to my GitHub repository and successfully pushed the three files: Ingest, Prepare, and Analyze directly from Azure. Subsequently, I utilized the "Create Workflow" feature in Azure to execute all three of these files within a data pipeline. You can find screenshots of my Azure workflow below.
 
-This PySpark application analyzes a dataset (`games.csv`), performs a column renaming transformation, and then executes a Spark SQL query to filter entries based on a positive ratio threshold. It first transformed the "title" column name to "Game Title" and then did a select query to select all the data entries with positive_ratio >= 90. The output data was exported to the output_data.csv folder with output csv files.
 
-## Prerequisites
+## Create a cluster for computing
 
-Ensure you have the following installed:
-- Docker
-- Python 3.6 or above
-- Apache Spark
+<img width="847" alt="Screenshot 2023-11-13 at 09 14 00" src="https://github.com/nogibjj/mini-proj11-rc/assets/123079408/6ba22780-4e55-4d7a-9ddc-9b6e19be8a75">
 
-## Installation & Running the Project
 
-1. Clone this repository:
-    ```
-    git clone https://github.com/carolxu369/IDS706-Week10-Mini-Project.git
-    ```
-2. Install Python dependencies:
-    ```
-    pip install -r requirements.txt
-    ```
-3. Run the PySpark script:
-    ```
-    python data_processing.py
-    ```
-After running, the script will generate an output_data.csv file in the project directory with the processed data.
+## Create notebooks to ingest, explore, prepare and analyze songs data
 
-Attach the output data screenshot here:
-![Output Data](output.png)
+
+<img width="1380" alt="Screenshot 2023-11-13 at 09 08 55" src="https://github.com/nogibjj/mini-proj11-rc/assets/123079408/e208a67c-a95b-4719-bbd0-663c28777a72">
+
+
+
+### 1. Ingest songs data:
+
+<img width="1175" alt="Screenshot 2023-11-13 at 09 11 49" src="https://github.com/nogibjj/mini-proj11-rc/assets/123079408/633052d5-c200-40df-9bec-73bf29a7e890">
+
+
+    
+### 2. Explore songs data:
+
+
+<img width="1160" alt="Screenshot 2023-11-13 at 09 12 10" src="https://github.com/nogibjj/mini-proj11-rc/assets/123079408/bd55c2d0-dc73-4ee6-9ebb-912cb3b057a0">
+
+
+    
+### 3. Prepare songs data:
+
+<img width="950" alt="Screenshot 2023-11-13 at 09 12 23" src="https://github.com/nogibjj/mini-proj11-rc/assets/123079408/8c7c55d4-f392-4399-999e-d43b7761cd5e">
+
+    
+
+### 4. Analyze songs data:
+
+<img width="866" alt="Screenshot 2023-11-13 at 09 13 16" src="https://github.com/nogibjj/mini-proj11-rc/assets/123079408/ac12e493-bd14-494e-b43e-5c05ba55d6b1">
+
+## Build a data pipeline and run
+
+
+<img width="934" alt="Screenshot 2023-11-13 at 09 14 22" src="https://github.com/nogibjj/mini-proj11-rc/assets/123079408/cf7c4872-4fc2-4a05-847f-05994ffd8ce5">
+
+
+<img width="1166" alt="Screenshot 2023-11-13 at 09 06 57" src="https://github.com/nogibjj/mini-proj11-rc/assets/123079408/8602bceb-af4c-4598-883a-e392db1af8a4">
+
+
+## Reference:
+
+https://learn.microsoft.com/zh-cn/azure/databricks/getting-started/data-pipeline-explore-data
